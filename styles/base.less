@@ -1,0 +1,199 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: #F8F8F8;
+}
+
+.comment {
+  font-style: italic;
+  color: #60606D;
+}
+
+.constant {
+  color: #FF3A55;
+}
+
+.entity {
+  font-weight: bold;
+  color: #FFFB00;
+}
+
+.keyword {
+  font-weight: bold;
+  color: #FFAA00;
+}
+
+.storage {
+  color: #F6F080;
+}
+
+.string {
+  color: #A9E448;
+}
+
+.support {
+  color: #84BEE2;
+}
+
+.variable {
+  color: #FB9A4B;
+}
+
+.invalid {
+  color: #F8F8F8;
+  background-color: rgba(216, 41, 13, 0.75);
+}
+
+.text .source {
+  background-color: rgba(176, 179, 186, 0.08);
+}
+
+.text.html.ruby .source {
+  background-color: rgba(177, 179, 186, 0.13);
+}
+
+.entity.other.inherited-class {
+  font-style: italic;
+  color: #4EE161;
+}
+
+.string.quoted .source {
+  color: #C773F3;
+}
+
+.string .constant {
+  color: #9DF39F;
+}
+
+.string.regexp {
+  color: #FFB454;
+}
+
+.string .variable {
+  color: #EDEF7D;
+}
+
+.support.function {
+  color: #FFB454;
+}
+
+.support.constant {
+  color: #EB939A;
+}
+
+.other.preprocessor.c {
+  color: #8996A8;
+}
+
+.other.preprocessor.c .entity {
+  color: #AFC4DB;
+}
+
+.declaration.sgml.html .declaration.doctype, .declaration.sgml.html .declaration.doctype .entity, .declaration.sgml.html .declaration.doctype .string, .declaration.xml-processing, .declaration.xml-processing .entity, .declaration.xml-processing .string {
+  color: #73817D;
+}
+
+.declaration.tag, .declaration.tag .entity, .meta.tag, .meta.tag .entity {
+  color: #9EFFFF;
+}
+
+.meta.selector.css .entity.name.tag {
+  color: #9EFFFF;
+}
+
+.meta.selector.css .entity.other.attribute-name.id {
+  color: #FFB454;
+}
+
+.meta.selector.css .entity.other.attribute-name.class {
+  color: #5FE461;
+}
+
+.support.type.property-name.css {
+  color: #9DF39F;
+}
+
+.meta.property-group .support.constant.property-value.css, .meta.property-value .support.constant.property-value.css {
+  color: #F6F080;
+}
+
+.meta.preprocessor.at-rule .keyword.control.at-rule {
+  color: #F6AA11;
+}
+
+.meta.property-value .support.constant.named-color.css, .meta.property-value .constant {
+  color: #EDF080;
+}
+
+.meta.constructor.argument.css {
+  color: #EB939A;
+}
+
+.meta.diff, .meta.diff.header {
+  font-style: italic;
+  color: #F8F8F8;
+  background-color: #0E2231;
+}
+
+.markup.deleted {
+  color: #F8F8F8;
+  background-color: #D03620;
+}
+
+.markup.changed {
+  color: #F8F8F8;
+  background-color: #C4B14A;
+}
+
+.markup.inserted {
+  color: #F8F8F8;
+  background-color: #41A83E;
+}
